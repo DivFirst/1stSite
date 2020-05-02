@@ -6,12 +6,6 @@ body{
     background: #778899;
 }
 
-.wrapper{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
 #top-bar{
     list-style-type: none;
     margin: 0;
@@ -58,6 +52,7 @@ body{
 /*pic top*/
 
 .my-image{
+    max-width: border-box;
     background: #1e90ff;
     position: relative;
     z-index: 0;
@@ -85,9 +80,9 @@ body{
     width: 1px;
     border: 1px solid #1e90ff;
     background-color: dodgerblue;
-    padding: 10px 0;
+    padding: .7% 0 .2%;
     position: relative;
-    bottom: 40px;
+    bottom: 20px;
 }
 
 #about-border{
@@ -103,20 +98,42 @@ body{
 /*media-queries*/
 
 @media screen and (max-width:480px) {
+    body{
+        max-width: 100%;
+    }
+
+    .my-image{
+        width: 100%;
+        height: auto;
+    }
     .image-back{
-        position: relative;
+        /*position:relative;
         width: 180%;
-        right: 40%;
+        right: 40%;*/
+        object-fit: cover;
+        object-position: center;
     }
 
     .top-list{
         display:none;
     }
     .site1{
-        margin-left: 60px;
         border: 1px solid white;
         position: relative;
         top: 7px;
+        object-position: center;
+        object-fit: cover;
+        padding: 1px 8px 8px 8px;
     }
 
+    #about-border{
+        border-width: 1px 0 1px 0;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .resume{
+        display: none;
+    }
 }
