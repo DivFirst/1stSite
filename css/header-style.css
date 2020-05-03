@@ -6,6 +6,10 @@ body{
     background: #778899;
 }
 
+#mobile-bar{
+    display: none;
+}
+
 #top-bar{
     list-style-type: none;
     margin: 0;
@@ -48,6 +52,21 @@ body{
 body{
     margin: 0px;
 }
+
+
+#mobile-bar{
+    float: left;
+    /*display: none;*/
+    color: white;
+    text-align: none;
+    padding: 8px 0px;
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    background-color: #333333;
+}
+
 
 /*pic top*/
 
@@ -98,6 +117,43 @@ body{
 /*media-queries*/
 
 @media screen and (max-width:480px) {
+
+    #mobile-bar{
+        display: block;
+        height: 20px;
+        width: 100%;
+        background: url("bars-min.png") 98% center;
+        background-repeat: no-repeat;
+        background-color: #333333;
+        cursor: pointer;
+    }
+
+    header nav ul{
+        overflow: hidden;
+        background: rgba(51, 51, 51, 0.67) !important;
+        height: 0;
+    }
+
+    header nav ul.open{
+        height: auto;
+    }
+
+    .top-list{
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    header nav ul li a{
+        color: white;
+        padding: 10px;
+        border-bottom: 1px solid #404040;
+        display: block;
+        width: 100% !important;
+        margin: 0;
+        text-align: left !important;
+    }
+
     body{
         max-width: 100%;
     }
@@ -114,9 +170,6 @@ body{
         object-position: center;
     }
 
-    .top-list{
-        display:none;
-    }
     .site1{
         border: 1px solid white;
         position: relative;
@@ -124,6 +177,7 @@ body{
         object-position: center;
         object-fit: cover;
         padding: 1px 8px 8px 8px;
+        display: none;
     }
 
     #about-border{
