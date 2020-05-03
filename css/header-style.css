@@ -119,38 +119,38 @@ body{
 @media screen and (max-width:480px) {
 
     #mobile-bar{
-        display: block;
-        height: 20px;
-        width: 100%;
-        background: url("bars-min.png") 98% center;
-        background-repeat: no-repeat;
-        background-color: #333333;
-        cursor: pointer;
+        display: block !important;
+        height: 20px !important;
+        width: 100% !important;
+        background: url("bars-min.png") 98% center !important;
+        background-repeat: no-repeat !important;
+        background-color: #333333 !important;
+        cursor: pointer !important;
     }
 
     header nav ul{
-        overflow: hidden;
+        overflow: hidden !important;
         background: rgba(51, 51, 51, 0.67) !important;
-        height: 0;
+        height: 0 !important;
     }
 
     header nav ul.open{
-        height: auto;
+        height: auto !important;
     }
 
     .top-list{
-        float: none;
-        width: 100%;
-        margin: 0;
+        float: none !important;
+        width: 100% !important;
+        margin: 0 !important;
     }
 
     header nav ul li a{
-        color: white;
-        padding: 10px;
-        border-bottom: 1px solid #404040;
-        display: block;
+        color: white !important;
+        padding: 10px !important;
+        border-bottom: 1px solid #404040 !important;
+        display: block !important;
         width: 100% !important;
-        margin: 0;
+        margin: 0 !important;
         text-align: left !important;
     }
 
