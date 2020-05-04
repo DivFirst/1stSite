@@ -251,6 +251,10 @@ body{
 
 @media screen and (max-width:480px) {
 
+    #top-bar{
+        position: relative;
+    }
+
     #mobile-bar{
         display: block !important;
         height: 20px !important;
