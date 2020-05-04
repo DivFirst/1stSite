@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
 /*Header*/
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #778899;
 }
@@ -12,12 +17,14 @@ body{
 }
 
 #top-bar{
+    position: fixed;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    width: 100%
+    width: 100%;
+    z-index: 4;
 }
 
 .top-list{
