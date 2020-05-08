@@ -257,6 +257,10 @@ body{
     border: 3px solid black;
 }
 
+#Project li{
+    list-style: none;
+}
+
 .project-head{
     padding: 5% 1% 0 1%;
     text-align: center;
